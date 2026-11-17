@@ -1,0 +1,44 @@
+/* Estilos personalizados SGAD - Mobile First y Accesibilidad */
+
+:root {
+  --sgad-primary: #0d6efd;
+  --sgad-success: #198754;
+  --sgad-warning: #ffc107;
+  --sgad-danger: #dc3545;
+  --sgad-dark: #212529;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #212529;
+  background-color: #f8f9fa;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Transición suave para tarjetas de nómina en móvil */
+.transition-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.transition-card:active {
+  transform: scale(0.99);
+}
+
+/* Controles táctiles móviles en cancha */
+@media (max-width: 576px) {
+  .btn-lg {
+    font-size: 1.1rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .form-control-lg {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}
+
+/* Enfoque de alta visibilidad para accesibilidad WCAG 2.1 AA */
+a:focus, button:focus, input:focus, select:focus {
+  outline: 2px solid #0d6efd !important;
+  outline-offset: 2px;
+}
